@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  grid-column: span 2 / span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.cover-image {
+}
+
+.cover-image img {
+  max-width: 100%;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
